@@ -314,6 +314,7 @@ calorieBurn = bicycleCalorieBurn + runningCalorieBurn + yogaCalorieBurn;
 // 練習：計算小明今日消耗的卡路里
 
 console.log(`小明今日一共消耗約 ${calorieBurn} 卡路里。`);
+// 小明今日一共消耗約 660 卡路里。
 
 // ### 10. 運動量是否達標！
 // 情境：小明記錄了一週內每一天的運動情況，包含運動時長（分鐘）和平均心率（次數）。
@@ -382,9 +383,10 @@ if (exerciseRecords[4].duration >= 30 && exerciseRecords[4].heartRate >= 130) {
 //     }
 // }
 
-console.log(totalDuration);
-console.log(validDays);
+console.log(totalDuration); // 有效累積時間 130
+console.log(validDays); // 有效累積天數 3
 // 練習：判斷是否符合 533 原則
 let isCompliant = validDays >= 5 || totalDuration >= 150; // 條件：運動次數至少 5 次 || 運動時間累績達標 >= 150;
 
 console.log(`小明的運動量是否達標: ${isCompliant}`); // 輸出: 小明的運動量是否達標
+// 小明的運動量是否達標: false
